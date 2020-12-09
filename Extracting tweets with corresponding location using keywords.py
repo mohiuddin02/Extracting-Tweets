@@ -15,10 +15,7 @@ import csv
 
 print("1 started")
 
-consumer_key = 
-consumer_secret = 
-access_key = 
-access_secret = 
+
 
 auth = tweepy.AppAuthHandler(consumer_key, consumer_secret)
 
@@ -28,7 +25,7 @@ api = tweepy.API(auth, wait_on_rate_limit=True,
 fName = 'tweets.json' 
 
 
-sinceId = None
+sinceId = "2020-12-09"#None
 max_id = -10000
 tweetCount = 0
 alltweets = []
